@@ -1,0 +1,154 @@
+.header {
+  width: 100%;
+  height: 650px;
+  background-color: $beige;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__left {
+  width: 120px;
+  height: 475px;
+  background: url('../images/header-images/left-header-image.png')
+    center no-repeat;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.header__right {
+  width: 200px;
+  height: 560px;
+  background: url('../images/header-images/right-header-image.png')
+    center no-repeat;
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 565px;
+  height: 100%;
+
+  @include mobile {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    z-index: 100;
+  }
+
+  @include tablet {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    z-index: 100;
+  }
+}
+
+.hidden-title {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1px;
+  color: $beige;
+}
+
+.content {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.content__title {
+  height: 135px;
+
+  @include mobile {
+    width: 90%;
+  }
+
+  @include tablet {
+    width: 90%;
+  }
+}
+
+.content__subtitle {
+  height: 70px;
+
+  @include mobile {
+    width: 90%;
+  }
+
+  @include tablet {
+    width: 90%;
+  }
+}
+
+.content__image {
+  height: 250px;
+  margin-bottom: 0;
+  position: relative;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.rabbit-image {
+  width: 350px;
+  height: 100%;
+  background: url('../images/header-images/header-content-image.png')
+    center no-repeat;
+  position: absolute;
+  right: 0;
+}
+
+.title {
+  font-family: $primary-font;
+  font-weight: $regular-font-weight;
+  font-size: 55px;
+  color: $black;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: $primary-font;
+  font-weight: $regular-font-weight;
+  font-size: 20px;
+  color: $black;
+  text-align: center;
+}
+
+.subtitle__link {
+  color: $violet;
+}
+
+.header__button {
+  width: 155px;
+  height: 50px;
+  margin: 0 15px;
+  border: 1px solid $violet;
+  border-radius: 24px;
+  background-color: $violet;
+  font-family: $primary-font;
+  font-weight: $bold-font-weight;
+  font-size: 16px;
+  color: $white;
+  transition: $standart-transition;
+}
+
+.header__button:hover {
+  background: none;
+  color: $violet;
+}

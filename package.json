@@ -1,0 +1,21 @@
+{
+  "homepage": "ha1dysh.github.io/mixlab",
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build --dist-dir=build --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.8.0"
+  }
+}

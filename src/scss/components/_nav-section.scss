@@ -1,0 +1,134 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 90px;
+
+  @include mobile {
+    width: 100vw;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include tablet {
+    width: 100vw;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav__container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link__ref {
+  font-family: $primary-font;
+  font-weight: $regular-font-weight;
+  color: $black;
+  font-size: 14px;
+  margin: 0 15px;
+  transition: $standart-transition;
+}
+
+.link__ref:hover {
+  margin: 0 20px;
+  color: $violet;
+}
+
+.nav__container--links {
+  width: 500px;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.logo {
+  width: 125px;
+  height: 30px;
+  background: url('../images/Logo.png') center no-repeat;
+}
+
+.nav__container--logo {
+  width: 130px;
+
+  @include mobile {
+    margin-right: 20px;
+  }
+
+  @include tablet {
+    margin-right: 20px;
+  }
+}
+
+.navigation__button {
+  width: 150px;
+  height: 38px;
+  margin: 0 15px;
+  border: 1px solid $violet;
+  border-radius: 19px;
+  background: none;
+  font-family: $primary-font;
+  font-weight: $bold-font-weight;
+  font-size: 14px;
+  color: $violet;
+  transition: $standart-transition;
+}
+
+.navigation__button:hover {
+  background-color: $violet;
+  color: $white;
+}
+
+.nav__container--buttons {
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.humburger {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    display: flex;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include desctop {
+    display: none;
+  }
+}
+
+.humburger__image {
+  width: 50px;
+  height: 50px;
+}

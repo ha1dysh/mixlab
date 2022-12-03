@@ -1,0 +1,82 @@
+// main
+.for-veterinarians {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-blue;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+// content
+.for-veterinarians-content {
+  width: 560px;
+  height: 650px;
+
+  @include mobile {
+    width: 90%;
+  }
+
+  @include tablet {
+    width: 90%;
+  }
+}
+
+.for-veterinarians-content__image {
+  background: url('../images/for-veterinarians-section-images/woman-and-dog.png')
+    center no-repeat;
+}
+
+.for-veterinarians-label {
+  margin-top: 150px;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: $bold-font-weight;
+  text-transform: uppercase;
+  color: $orange;
+}
+
+.for-veterinarians-title {
+  margin-top: 8px;
+  font-family: $primary-font;
+  font-size: 44px;
+  font-weight: $regular-font-weight;
+  line-height: 50px;
+  color: $black;
+}
+
+.for-veterinarians-text {
+  margin-top: 45px;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: $regular-font-weight;
+  line-height: 22px;
+  color: $black;
+}
+
+// button
+.for-veterinarians-button {
+  width: 165px;
+  height: 50px;
+  margin-top: 25px;
+  border: 1px solid $violet;
+  border-radius: 24px;
+  background-color: $violet;
+  font-family: $primary-font;
+  font-weight: $bold-font-weight;
+  font-size: 16px;
+  color: $white;
+  transition: $standart-transition;
+}
+
+.for-veterinarians-button:hover {
+  background: none;
+  color: $violet;
+}
